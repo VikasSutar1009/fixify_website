@@ -1,0 +1,28 @@
+/* Specialized flickering for the Electrician service */
+@keyframes electric-flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px rgba(96, 165, 250, 0.8)) 
+            drop-shadow(0 0 20px rgba(96, 165, 250, 0.4));
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    filter: none;
+  }
+}
+
+.electric-flicker {
+  animation: electric-flicker 3s linear infinite;
+}
+
+/* Brush stroke mask utility */
+.brush-mask {
+  background: linear-gradient(to right, black 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 1.5s ease-out;
+}
+
+.brush-mask:hover {
+  background-position: left bottom;
+}

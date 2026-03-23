@@ -53,7 +53,7 @@ const Portfolio = () => {
       {/* Heading */}
       <div className="max-w-6xl mx-auto px-6 text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
-          Our <span className="text-blue-400">Portfolio</span>
+           Our Professional <span className="text-blue-600">Portfolio</span>
         </h2>
 
         <p className="text-gray-400 max-w-2xl mx-auto">

@@ -27,7 +27,7 @@ const ServicesGrid = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="services" className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
 
       {/* Heading */}
       <motion.div
@@ -37,7 +37,7 @@ const ServicesGrid = () => {
         className="text-center mb-12"
       >
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-          Our Professional <span className="text-blue-600">Portfolio</span>
+         Services We Offer
         </h2>
 
         <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">

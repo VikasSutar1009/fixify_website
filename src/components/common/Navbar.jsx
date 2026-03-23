@@ -9,9 +9,9 @@ const Navbar = () => {
     <>
       {/* Navbar */}
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-40 w-[80%] sm:w-[88%] max-w-[820px]">
-        
+
         <div className="bg-white/90 backdrop-blur-md px-4 sm:px-6 py-3 rounded-full flex items-center justify-between shadow-md">
-          
+
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
@@ -80,14 +80,16 @@ const Navbar = () => {
       {menuOpen && (
         <div className="fixed top-24 left-1/2 -translate-x-1/2 w-[90%] max-w-[320px] bg-white rounded-2xl shadow-xl p-5 flex flex-col gap-5 text-center z-30">
 
-          <Link
-            to="/"
+          {/* Services (Scroll to section) */}
+          <a
+            href="#services"
             onClick={() => setMenuOpen(false)}
             className="text-slate-700 hover:text-blue-600 transition"
           >
             Services
-          </Link>
+          </a>
 
+          {/* Reviews (keep routing if separate page) */}
           <Link
             to="/reviews"
             onClick={() => setMenuOpen(false)}
@@ -96,6 +98,7 @@ const Navbar = () => {
             Reviews
           </Link>
 
+          {/* WhatsApp */}
           <a
             href="https://wa.me/919130804848"
             target="_blank"
